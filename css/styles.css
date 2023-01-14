@@ -140,7 +140,8 @@ nav {
 }
 
 #fourth-image {
-    background-image: url(../images/placeholder.png);
+    background-image: url(../images/calculadora-imc.png);
+    background-position-x: center;
 }
 
 /* Contacting */
@@ -190,5 +191,9 @@ nav {
     #contacting-icons {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    #contacting {
+        height: 60%;
     }
 }
