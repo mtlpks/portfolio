@@ -119,6 +119,11 @@ nav {
     border-radius: 4px;
 }
 
+.project-tile:hover {
+    background-color: rgb(69, 69, 238);
+    transition: 0.3s;
+}
+
 .project-image {
     width: 500px;
     height: 300px;
@@ -132,8 +137,8 @@ nav {
 }
 
 #second-image {
-    background-image: url(../images/landing-page.png);
-    background-position-x: -2rem;
+    background-image: url(../images/react-quote.png);
+    background-position-x: center;
 }
 
 #third-image {
