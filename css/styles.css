@@ -62,6 +62,10 @@ nav {
     text-shadow: 0px 2px black;
 }
 
+.nav-link:active {
+    background-color: #7dd3d3;
+}
+
 /* Welcome section */
 
 #welcome-section {
@@ -84,6 +88,10 @@ nav {
 
 #welcome-subtext {
     color: black;
+}
+
+#descrition {
+    font-size: 1rem;
 }
 
 /* Projects */
@@ -120,7 +128,7 @@ nav {
 }
 
 .project-tile:hover {
-    background-color: rgb(69, 69, 238);
+    background-color: var(--cyan);
     transition: 0.3s;
 }
 
@@ -146,7 +154,12 @@ nav {
 }
 
 #fourth-image {
-    background-image: url(../images/calculadora-imc.png);
+    background-image: url(../images/markdown-previewer.png);
+    background-position-x: center;
+}
+
+#fifth-image {
+    background-image: url(../images/soundboard.png);
     background-position-x: center;
 }
 
