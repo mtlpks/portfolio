@@ -7,71 +7,141 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400&family=Source+Code+Pro:wght@200;400&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4222a0128d.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400&family=Source+Code+Pro:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/4222a0128d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Portfolio</title>
   </head>
   <body>
-    <nav id="navbar">
-      <ul id="nav-list">
-        <li class="nav-item">
-          <a class="nav-link" href="#welcome-section">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Trabalhos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contacting">Contato</a>
-        </li>
-      </ul>
+    <nav class="navbar fixed-top" data-bs-theme="dark">
+      <div class="container-fluid justify-content-center">
+        <a href="#welcome-section">
+          <button class="btn">Sobre</button>
+        </a>
+        <a href="#projects"><button class="btn">Projetos</button></a>
+        <a href="#contacting"><button class="btn">Contato</button></a>
+      </div>
     </nav>
     <section id="welcome-section">
-      <h1 id="welcome-text">Oi, me chamo Matheus.</h1>
+      <div class="welcome-info">
+        <h1 id="welcome-text">Oi, me chamo Matheus.</h1>
       <p id="welcome-subtext">
-        Sou estudante de programação e desenvolvimento web.
+        Sou desenvolvedor front-end.
       </p>
-      <p id="descrition">
-        Meus pontos de desenvolvimento mais altos no momento são JavaScript, React e CSS, no entanto me adapto bem a novas tecnologias.
+      <p id="description" class="desc">
+        Meus pontos de desenvolvimento mais altos no momento são JavaScript,
+        React e CSS, no entanto me adapto bem a novas tecnologias.
       </p>
+      <p class="desc">
+        Para informações mais detalhadas sobre mim,
+        <a
+          target="_blank"
+          class="welcome-link"
+          href="https://drive.google.com/file/d/16wbfVK5MZmeA7_mJRgJEDXu7vn57_nyd/view?usp=sharing"
+          >este link</a
+        >
+        contém meu currículo.
+      </p>
+      </div>
     </section>
     <section id="projects">
-      <h2 class="section-header">Aqui estão alguns dos meus trabalhos.</h2>
-      <div id="projects-grid">
-        <a target="_blank" href="https://mtlpks.github.io/sweet-website/"
-          ><div class="project-tile">
-            <div class="project-image" id="first-image"></div></div
-        ></a>
-        <a target="_blank" href="https://mtlpks.github.io/react-quote-app/"
-          ><div class="project-tile">
-            <div class="project-image" id="second-image"></div></div
-        ></a>
-        <a target="_blank" href="https://mtlpks.github.io/docs-portugol/"
-          ><div class="project-tile">
-            <div class="project-image" id="third-image"></div></div
-        ></a>
-        <a target="_blank" href="https://mtlpks.github.io/react-markdown/"
-          ><div class="project-tile">
-            <div class="project-image" id="fourth-image"></div></div
-        ></a>
-        <a target="_blank" href="https://mtlpks.github.io/react-soundboard/"
-          ><div class="project-tile">
-            <div class="project-image" id="fifth-image"></div></div
-        ></a>
+      <h2 class="section-header">Aqui estão alguns dos meus projetos.</h2>
+      <div class="container" id="projects-grid">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="card text-bg-dark mb-3">
+              <img src="./images/soundboard-rs.png" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Daft Punk Soundboard</h5>
+                <p class="card-text">Um app que toca a música do Daft Punk, Harder Better Faster Stronger.</p>
+                <p class="card-text">Criado com: React</p>
+                <a href="https://mtlpks.github.io/react-soundboard/" target="_blank" class="btn btn-secondary">Clique para acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card text-bg-dark mb-3">
+              <img src="./images/react-quote-rs.png" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Quote App</h5>
+                <p class="card-text">Um app que retorna uma frase famosa aleatória.</p>
+                <p class="card-text">Criado com: React, JSON parsing</p>
+                <a href="https://mtlpks.github.io/react-quote-app/" target="_blank" class="btn btn-secondary">Clique para acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card text-bg-dark mb-3">
+              <img
+                src="./images/sweet-website-rs.png"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sweet Website</h5>
+                <p class="card-text">Um website criado para a empresa de uma amiga.</p>
+                <p class="card-text">Criado com: CSS</p>
+                <a href="https://mtlpks.github.io/sweet-website/" target="_blank" class="btn btn-secondary">Clique para acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card text-bg-dark mb-3">
+              <img
+                src="./images/react-calculator-rs.png"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Calculator App</h5>
+                <p class="card-text">Um aplicativo de calculadora, com design mockup do iPhone.</p>
+                <p class="card-text">Criado com: React, Bootstrap, MathJS</p>
+                <a href="https://mtlpks.github.io/react-calculator/" target="_blank" class="btn btn-secondary">Clique para acessar</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="contacting">
-        <h3 class="section-header">Contato</h3>
-        <div id="contacting-icons">
-            <div class="contacting-div">
-                <a class="icon-link" href="https://github.com/mtlpks"><i class="fa-brands fa-github"></i> GitHub</a>
-            </div>
-            <div class="contacting-div">
-                <a class="icon-link" href="mailto:mtlpks@outlook.com"><i class="fa-solid fa-envelope"></i> Email</a>
-            </div>
-            <div class="contacting-div">
-                <a class="icon-link" id="profile-link" target="_blank" href="https://www.linkedin.com/in/matheus-leopoldo-214104211/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-            </div>
+      <h3 class="section-header">Contato</h3>
+      <div id="contacting-icons">
+        <div class="contacting-div">
+          <a target="_blank" class="icon-link" href="https://github.com/mtlpks"
+            ><i class="fa-brands fa-github"></i> GitHub</a
+          >
         </div>
+        <div class="contacting-div">
+          <a target="_blank" class="icon-link" href="mailto:mtlpks@outlook.com"
+            ><i class="fa-solid fa-envelope"></i> Email</a
+          >
+        </div>
+        <div class="contacting-div">
+          <a
+            class="icon-link"
+            id="profile-link"
+            target="_blank"
+            href="https://www.linkedin.com/in/matheus-leopoldo-214104211/"
+            ><i class="fa-brands fa-linkedin"></i> Linkedin</a
+          >
+        </div>
+      </div>
     </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
