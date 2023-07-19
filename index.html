@@ -17,6 +17,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    
     <script
       src="https://kit.fontawesome.com/4222a0128d.js"
       crossorigin="anonymous"
@@ -27,14 +28,25 @@
     <nav class="navbar bg-opacity-25 fixed-top" data-bs-theme="dark">
       <div class="container-fluid justify-content-center">
         <a href="#welcome-section">
-          <button class="btn">Sobre</button>
+          <button class="btn" id="nav-bar-about">Sobre</button>
         </a>
-        <a href="#projects"><button class="btn">Projetos</button></a>
-        <a href="#contacting"><button class="btn">Contato</button></a>
+        <a href="#projects"><button id="nav-bar-projects" class="btn">Projetos</button></a>
+        <a href="#contacting"><button id="nav-bar-contacting" class="btn">Contato</button></a>
       </div>
     </nav>
 
     <section id="welcome-section">
+      <div class="dropdown-div">
+        <div class="dropdown text-center" id="dropdown-language">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="language-selector">Linguagem</button>
+          <ul class="dropdown-menu">
+            <li><a href="" class="dropdown-item" data-lang="pt-br"><img src="./images/Flag_of_Brazil.svg.png" class="flag-img" alt="" srcset=""> Português</a></li>
+            <li><a href="" class="dropdown-item" data-lang="en"><img src="./images/Flag_of_the_United_Kingdom.svg.png" class="flag-img" alt="" srcset=""> English</a></li>
+            
+          </ul>
+        </div>
+        <script src="./js/languageSelector.js"></script>
+      </div>
       <div class="welcome-info">
         <h1 id="welcome-text">Oi, me chamo Matheus.</h1>
       <p id="welcome-subtext">
@@ -44,7 +56,7 @@
         Meus pontos de desenvolvimento mais altos no momento são JavaScript,
         React e CSS, no entanto me adapto bem a novas tecnologias.
       </p>
-      <p class="desc">
+      <p class="desc" id="subdescription">
         Para informações mais detalhadas sobre mim,
         <a
           target="_blank"
@@ -57,17 +69,17 @@
       </div>
     </section>
     <section id="projects">
-      <h2 class="section-header">Aqui estão alguns dos meus projetos.</h2>
+      <h2 class="section-header" id="projects-header">Aqui estão alguns dos meus projetos.</h2>
       <div class="container" id="projects-grid">
         <div class="row">
           <div class="col-12 col-lg-6">
             <div class="card text-bg-dark mb-3">
               <img src="./images/soundboard-rs.png" alt="" class="card-img-top" />
               <div class="card-body">
-                <h5 class="card-title">Daft Punk Soundboard</h5>
-                <p class="card-text">Um app que toca a música do Daft Punk, Harder Better Faster Stronger.</p>
-                <p class="card-text">Criado com: React</p>
-                <a href="https://mtlpks.github.io/react-soundboard/" target="_blank" class="btn btn-secondary">Clique para acessar</a>
+                <h5 class="card-title" id="daft-punk-title">Daft Punk Soundboard</h5>
+                <p class="card-text" id="daft-punk-text">Um app que toca a música do Daft Punk, Harder Better Faster Stronger.</p>
+                <p class="card-text" id="daft-punk-subtext">Criado com: React</p>
+                <a href="https://mtlpks.github.io/react-soundboard/" target="_blank" class="btn btn-secondary" id="daft-punk-click">Clique para acessar</a>
               </div>
             </div>
           </div>
@@ -75,10 +87,10 @@
             <div class="card text-bg-dark mb-3">
               <img src="./images/react-quote-rs.png" alt="" class="card-img-top" />
               <div class="card-body">
-                <h5 class="card-title">Quote App</h5>
-                <p class="card-text">Um app que retorna uma frase famosa aleatória.</p>
-                <p class="card-text">Criado com: React, JSON parsing</p>
-                <a href="https://mtlpks.github.io/react-quote-app/" target="_blank" class="btn btn-secondary">Clique para acessar</a>
+                <h5 class="card-title" id="quote-app-title">Quote App</h5>
+                <p class="card-text" id="quote-app-text">Um app que retorna uma frase famosa aleatória.</p>
+                <p class="card-text" id="quote-app-subtext">Criado com: React, JSON parsing</p>
+                <a href="https://mtlpks.github.io/react-quote-app/" target="_blank" class="btn btn-secondary" id="quote-app-click">Clique para acessar</a>
               </div>
             </div>
           </div>
@@ -90,10 +102,10 @@
                 class="card-img-top"
               />
               <div class="card-body">
-                <h5 class="card-title">Sweet Website</h5>
-                <p class="card-text">Um website criado para a empresa de uma amiga.</p>
-                <p class="card-text">Criado com: CSS</p>
-                <a href="https://mtlpks.github.io/sweet-website/" target="_blank" class="btn btn-secondary">Clique para acessar</a>
+                <h5 class="card-title" id="sweet-website-title">Sweet Website</h5>
+                <p class="card-text" id="sweet-website-text">Um website criado para a empresa de uma amiga.</p>
+                <p class="card-text" id="sweet-website-subtext">Criado com: CSS</p>
+                <a href="https://mtlpks.github.io/sweet-website/" target="_blank" class="btn btn-secondary" id="sweet-website-click">Clique para acessar</a>
               </div>
             </div>
           </div>
@@ -105,10 +117,10 @@
                 class="card-img-top"
               />
               <div class="card-body">
-                <h5 class="card-title">Calculator App</h5>
-                <p class="card-text">Um aplicativo de calculadora, com design mockup do iPhone.</p>
-                <p class="card-text">Criado com: React, Bootstrap, MathJS</p>
-                <a href="https://mtlpks.github.io/react-calculator/" target="_blank" class="btn btn-secondary">Clique para acessar</a>
+                <h5 class="card-title" id="calculator-app-title">Calculator App</h5>
+                <p class="card-text" id="calculator-app-text">Um aplicativo de calculadora, com design mockup do iPhone.</p>
+                <p class="card-text" id="calculator-app-subtext">Criado com: React, Bootstrap, MathJS</p>
+                <a href="https://mtlpks.github.io/react-calculator/" target="_blank" class="btn btn-secondary" id="calculator-app-click">Clique para acessar</a>
               </div>
             </div>
           </div>
@@ -116,7 +128,7 @@
       </div>
     </section>
     <section id="contacting">
-      <h3 class="section-header">Contato</h3>
+      <h3 class="section-header" id="contacting-header">Contato</h3>
       <div id="contacting-icons" class="container-fluid">
         <div class="row">
           <div class="contacting-div col-12 col-lg-4">

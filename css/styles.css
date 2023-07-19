@@ -41,6 +41,23 @@ body {
   z-index: 1;
 }
 
+#dropdown-language {
+  position: absolute;
+  top: 7%;
+  left: 1%;
+}
+
+@media only screen and (max-width: 1000px) {
+  #dropdown-language {
+    top: 8%;
+    left: 2%;
+  }
+}
+
+.flag-img {
+  max-width: 15px;
+}
+
 /* Welcome section */
 
 #welcome-section {
