@@ -7,6 +7,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: 0.2s;
 }
 
 body {
@@ -130,7 +131,11 @@ body {
   margin-top: 2rem;
 }
 
-.project-tile {
+.card-img-top {
+  width: 500px;
+}
+
+/* .project-tile {
   padding: 1rem;
   background-color: var(--blue);
   margin: 2rem;
@@ -147,7 +152,7 @@ body {
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 /* Contacting */
 
