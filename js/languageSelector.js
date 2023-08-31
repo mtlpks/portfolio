@@ -37,7 +37,7 @@ const languageStrings = {
     <a
       target="_blank"
       class="welcome-link"
-      href="https://drive.google.com/file/d/16wbfVK5MZmeA7_mJRgJEDXu7vn57_nyd/view?usp=sharing"
+      href="https://drive.google.com/file/d/17uJXKoX9VM4dFIdPv-FopqDBWVhi5fvz/view?usp=sharing"
       >este link</a
     >
     contém meu currículo.`,
