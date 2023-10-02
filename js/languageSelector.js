@@ -8,7 +8,8 @@ const languageStrings = {
     "nav-bar-contacting": "Contacting",
     "welcome-text": "Hi, my name is Matheus.",
     "welcome-subtext": "I'm a front-end developer.",
-    'description': `My greatest boons at the moment are Javascript, React.JS and CSS, but i'm a fast learner and adapt well to new technologies.`,
+    'description': `My greatest boons at the moment are <strong>JavaScript,
+    React e CSS</strong>, but i'm a fast learner and adapt well to new technologies.`,
     'subdescription': `For more details, you can check my CV at <a class="welcome-link" href="https://drive.google.com/file/d/17uJXKoX9VM4dFIdPv-FopqDBWVhi5fvz/view?usp=drive_link" target="_blank">this link</a>.`,
     "projects-header": "Here are some of my projects.",
     "daft-punk-text": `A soundboard app that plays a Daft Punk song.`,
@@ -32,7 +33,8 @@ const languageStrings = {
     "nav-bar-contacting": "Contato",
     "welcome-text": "Oi, meu nome é Matheus.",
     "welcome-subtext": "Sou desenvolvedor front-end.",
-    'description': `Meus pontos de desenvolvimento mais altos no momento são JavaScript, React.JS e CSS, no entanto me adapto bem a novas tecnologias.`,
+    'description': `Meus pontos de desenvolvimento mais altos no momento são <strong>JavaScript,
+    React e CSS</strong>, no entanto me adapto bem a novas tecnologias.`,
     'subdescription': `Para informações mais detalhadas sobre mim,
     <a
       target="_blank"
